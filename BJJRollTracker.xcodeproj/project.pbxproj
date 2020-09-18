@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A67A5C8A25157B7D003F1C0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A5C8925157B7D003F1C0C /* AppDelegate.swift */; };
+		A67A5C8C25157B7D003F1C0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A5C8B25157B7D003F1C0C /* SceneDelegate.swift */; };
+		A67A5C8E25157B7D003F1C0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A5C8D25157B7D003F1C0C /* ViewController.swift */; };
+		A67A5C9125157B7D003F1C0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67A5C8F25157B7D003F1C0C /* Main.storyboard */; };
+		A67A5C9425157B7D003F1C0C /* BJJRollTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A67A5C9225157B7D003F1C0C /* BJJRollTracker.xcdatamodeld */; };
+		A67A5C9625157B80003F1C0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A67A5C9525157B80003F1C0C /* Assets.xcassets */; };
+		A67A5C9925157B80003F1C0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67A5C9725157B80003F1C0C /* LaunchScreen.storyboard */; };
+		A67A5CA425157B80003F1C0C /* BJJRollTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A5CA325157B80003F1C0C /* BJJRollTrackerTests.swift */; };
+		A67A5CAF25157B80003F1C0C /* BJJRollTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A5CAE25157B80003F1C0C /* BJJRollTrackerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A67A5CA025157B80003F1C0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A67A5C7E25157B7D003F1C0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A67A5C8525157B7D003F1C0C;
+			remoteInfo = BJJRollTracker;
+		};
+		A67A5CAB25157B80003F1C0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A67A5C7E25157B7D003F1C0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A67A5C8525157B7D003F1C0C;
+			remoteInfo = BJJRollTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A67A5C8625157B7D003F1C0C /* BJJRollTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BJJRollTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A67A5C8925157B7D003F1C0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A67A5C8B25157B7D003F1C0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A67A5C8D25157B7D003F1C0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A67A5C9025157B7D003F1C0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A67A5C9325157B7D003F1C0C /* BJJRollTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BJJRollTracker.xcdatamodel; sourceTree = "<group>"; };
+		A67A5C9525157B80003F1C0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A67A5C9825157B80003F1C0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A67A5C9A25157B80003F1C0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A67A5C9F25157B80003F1C0C /* BJJRollTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BJJRollTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A67A5CA325157B80003F1C0C /* BJJRollTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BJJRollTrackerTests.swift; sourceTree = "<group>"; };
+		A67A5CA525157B80003F1C0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A67A5CAA25157B80003F1C0C /* BJJRollTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BJJRollTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A67A5CAE25157B80003F1C0C /* BJJRollTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BJJRollTrackerUITests.swift; sourceTree = "<group>"; };
+		A67A5CB025157B80003F1C0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A67A5C8325157B7D003F1C0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A67A5C9C25157B80003F1C0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A67A5CA725157B80003F1C0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A67A5C7D25157B7D003F1C0C = {
+			isa = PBXGroup;
+			children = (
+				A67A5C8825157B7D003F1C0C /* BJJRollTracker */,
+				A67A5CA225157B80003F1C0C /* BJJRollTrackerTests */,
+				A67A5CAD25157B80003F1C0C /* BJJRollTrackerUITests */,
+				A67A5C8725157B7D003F1C0C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A67A5C8725157B7D003F1C0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A67A5C8625157B7D003F1C0C /* BJJRollTracker.app */,
+				A67A5C9F25157B80003F1C0C /* BJJRollTrackerTests.xctest */,
+				A67A5CAA25157B80003F1C0C /* BJJRollTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A67A5C8825157B7D003F1C0C /* BJJRollTracker */ = {
+			isa = PBXGroup;
+			children = (
+				A67A5C8925157B7D003F1C0C /* AppDelegate.swift */,
+				A67A5C8B25157B7D003F1C0C /* SceneDelegate.swift */,
+				A67A5C8D25157B7D003F1C0C /* ViewController.swift */,
+				A67A5C8F25157B7D003F1C0C /* Main.storyboard */,
+				A67A5C9525157B80003F1C0C /* Assets.xcassets */,
+				A67A5C9725157B80003F1C0C /* LaunchScreen.storyboard */,
+				A67A5C9A25157B80003F1C0C /* Info.plist */,
+				A67A5C9225157B7D003F1C0C /* BJJRollTracker.xcdatamodeld */,
+			);
+			path = BJJRollTracker;
+			sourceTree = "<group>";
+		};
+		A67A5CA225157B80003F1C0C /* BJJRollTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A67A5CA325157B80003F1C0C /* BJJRollTrackerTests.swift */,
+				A67A5CA525157B80003F1C0C /* Info.plist */,
+			);
+			path = BJJRollTrackerTests;
+			sourceTree = "<group>";
+		};
+		A67A5CAD25157B80003F1C0C /* BJJRollTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A67A5CAE25157B80003F1C0C /* BJJRollTrackerUITests.swift */,
+				A67A5CB025157B80003F1C0C /* Info.plist */,
+			);
+			path = BJJRollTrackerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A67A5C8525157B7D003F1C0C /* BJJRollTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A67A5CB325157B80003F1C0C /* Build configuration list for PBXNativeTarget "BJJRollTracker" */;
+			buildPhases = (
+				A67A5C8225157B7D003F1C0C /* Sources */,
+				A67A5C8325157B7D003F1C0C /* Frameworks */,
+				A67A5C8425157B7D003F1C0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BJJRollTracker;
+			productName = BJJRollTracker;
+			productReference = A67A5C8625157B7D003F1C0C /* BJJRollTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A67A5C9E25157B80003F1C0C /* BJJRollTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A67A5CB625157B80003F1C0C /* Build configuration list for PBXNativeTarget "BJJRollTrackerTests" */;
+			buildPhases = (
+				A67A5C9B25157B80003F1C0C /* Sources */,
+				A67A5C9C25157B80003F1C0C /* Frameworks */,
+				A67A5C9D25157B80003F1C0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A67A5CA125157B80003F1C0C /* PBXTargetDependency */,
+			);
+			name = BJJRollTrackerTests;
+			productName = BJJRollTrackerTests;
+			productReference = A67A5C9F25157B80003F1C0C /* BJJRollTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A67A5CA925157B80003F1C0C /* BJJRollTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A67A5CB925157B80003F1C0C /* Build configuration list for PBXNativeTarget "BJJRollTrackerUITests" */;
+			buildPhases = (
+				A67A5CA625157B80003F1C0C /* Sources */,
+				A67A5CA725157B80003F1C0C /* Frameworks */,
+				A67A5CA825157B80003F1C0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A67A5CAC25157B80003F1C0C /* PBXTargetDependency */,
+			);
+			name = BJJRollTrackerUITests;
+			productName = BJJRollTrackerUITests;
+			productReference = A67A5CAA25157B80003F1C0C /* BJJRollTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A67A5C7E25157B7D003F1C0C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Hasan Qasim";
+				TargetAttributes = {
+					A67A5C8525157B7D003F1C0C = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					A67A5C9E25157B80003F1C0C = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = A67A5C8525157B7D003F1C0C;
+					};
+					A67A5CA925157B80003F1C0C = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = A67A5C8525157B7D003F1C0C;
+					};
+				};
+			};
+			buildConfigurationList = A67A5C8125157B7D003F1C0C /* Build configuration list for PBXProject "BJJRollTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A67A5C7D25157B7D003F1C0C;
+			productRefGroup = A67A5C8725157B7D003F1C0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A67A5C8525157B7D003F1C0C /* BJJRollTracker */,
+				A67A5C9E25157B80003F1C0C /* BJJRollTrackerTests */,
+				A67A5CA925157B80003F1C0C /* BJJRollTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A67A5C8425157B7D003F1C0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A67A5C9925157B80003F1C0C /* LaunchScreen.storyboard in Resources */,
+				A67A5C9625157B80003F1C0C /* Assets.xcassets in Resources */,
+				A67A5C9125157B7D003F1C0C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A67A5C9D25157B80003F1C0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A67A5CA825157B80003F1C0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A67A5C8225157B7D003F1C0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A67A5C8E25157B7D003F1C0C /* ViewController.swift in Sources */,
+				A67A5C8A25157B7D003F1C0C /* AppDelegate.swift in Sources */,
+				A67A5C9425157B7D003F1C0C /* BJJRollTracker.xcdatamodeld in Sources */,
+				A67A5C8C25157B7D003F1C0C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A67A5C9B25157B80003F1C0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A67A5CA425157B80003F1C0C /* BJJRollTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A67A5CA625157B80003F1C0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A67A5CAF25157B80003F1C0C /* BJJRollTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A67A5CA125157B80003F1C0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A67A5C8525157B7D003F1C0C /* BJJRollTracker */;
+			targetProxy = A67A5CA025157B80003F1C0C /* PBXContainerItemProxy */;
+		};
+		A67A5CAC25157B80003F1C0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A67A5C8525157B7D003F1C0C /* BJJRollTracker */;
+			targetProxy = A67A5CAB25157B80003F1C0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A67A5C8F25157B7D003F1C0C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A67A5C9025157B7D003F1C0C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A67A5C9725157B80003F1C0C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A67A5C9825157B80003F1C0C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A67A5CB125157B80003F1C0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A67A5CB225157B80003F1C0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A67A5CB425157B80003F1C0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B9H3895JF;
+				INFOPLIST_FILE = BJJRollTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hq.BJJRollTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A67A5CB525157B80003F1C0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B9H3895JF;
+				INFOPLIST_FILE = BJJRollTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hq.BJJRollTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A67A5CB725157B80003F1C0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B9H3895JF;
+				INFOPLIST_FILE = BJJRollTrackerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hq.BJJRollTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BJJRollTracker.app/BJJRollTracker";
+			};
+			name = Debug;
+		};
+		A67A5CB825157B80003F1C0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B9H3895JF;
+				INFOPLIST_FILE = BJJRollTrackerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hq.BJJRollTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BJJRollTracker.app/BJJRollTracker";
+			};
+			name = Release;
+		};
+		A67A5CBA25157B80003F1C0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B9H3895JF;
+				INFOPLIST_FILE = BJJRollTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hq.BJJRollTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BJJRollTracker;
+			};
+			name = Debug;
+		};
+		A67A5CBB25157B80003F1C0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B9H3895JF;
+				INFOPLIST_FILE = BJJRollTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hq.BJJRollTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BJJRollTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A67A5C8125157B7D003F1C0C /* Build configuration list for PBXProject "BJJRollTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A67A5CB125157B80003F1C0C /* Debug */,
+				A67A5CB225157B80003F1C0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A67A5CB325157B80003F1C0C /* Build configuration list for PBXNativeTarget "BJJRollTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A67A5CB425157B80003F1C0C /* Debug */,
+				A67A5CB525157B80003F1C0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A67A5CB625157B80003F1C0C /* Build configuration list for PBXNativeTarget "BJJRollTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A67A5CB725157B80003F1C0C /* Debug */,
+				A67A5CB825157B80003F1C0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A67A5CB925157B80003F1C0C /* Build configuration list for PBXNativeTarget "BJJRollTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A67A5CBA25157B80003F1C0C /* Debug */,
+				A67A5CBB25157B80003F1C0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A67A5C9225157B7D003F1C0C /* BJJRollTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A67A5C9325157B7D003F1C0C /* BJJRollTracker.xcdatamodel */,
+			);
+			currentVersion = A67A5C9325157B7D003F1C0C /* BJJRollTracker.xcdatamodel */;
+			path = BJJRollTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A67A5C7E25157B7D003F1C0C /* Project object */;
+}
