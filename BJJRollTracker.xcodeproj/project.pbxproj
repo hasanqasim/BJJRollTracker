@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		A67A5C8A25157B7D003F1C0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A5C8925157B7D003F1C0C /* AppDelegate.swift */; };
 		A67A5C8C25157B7D003F1C0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A5C8B25157B7D003F1C0C /* SceneDelegate.swift */; };
-		A67A5C8E25157B7D003F1C0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A5C8D25157B7D003F1C0C /* ViewController.swift */; };
 		A67A5C9125157B7D003F1C0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67A5C8F25157B7D003F1C0C /* Main.storyboard */; };
 		A67A5C9425157B7D003F1C0C /* BJJRollTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A67A5C9225157B7D003F1C0C /* BJJRollTracker.xcdatamodeld */; };
 		A67A5C9625157B80003F1C0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A67A5C9525157B80003F1C0C /* Assets.xcassets */; };
 		A67A5C9925157B80003F1C0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67A5C9725157B80003F1C0C /* LaunchScreen.storyboard */; };
 		A67A5CA425157B80003F1C0C /* BJJRollTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A5CA325157B80003F1C0C /* BJJRollTrackerTests.swift */; };
 		A67A5CAF25157B80003F1C0C /* BJJRollTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A5CAE25157B80003F1C0C /* BJJRollTrackerUITests.swift */; };
+		A67C4E8F251604CC007810B1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67C4E8E251604CC007810B1 /* SettingsViewController.swift */; };
+		A6CB13212530AF8000A6947E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CB13202530AF8000A6947E /* AVFoundation.framework */; };
+		A6CB13312530B3F800A6947E /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6CB13302530B3F800A6947E /* alarm.mp3 */; };
+		A6CB133A253116B000A6947E /* RollSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CB1339253116B000A6947E /* RollSetting.swift */; };
+		A6CB134C2531EEC100A6947E /* SettingsViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CB134B2531EEC100A6947E /* SettingsViewControllerDelegate.swift */; };
+		A6D06D51251A2D78005309C6 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D06D50251A2D78005309C6 /* AnimationViewController.swift */; };
+		A6D06D54251B123F005309C6 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D06D53251B123E005309C6 /* TimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +45,6 @@
 		A67A5C8625157B7D003F1C0C /* BJJRollTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BJJRollTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67A5C8925157B7D003F1C0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A67A5C8B25157B7D003F1C0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A67A5C8D25157B7D003F1C0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A67A5C9025157B7D003F1C0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A67A5C9325157B7D003F1C0C /* BJJRollTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BJJRollTracker.xcdatamodel; sourceTree = "<group>"; };
 		A67A5C9525157B80003F1C0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +56,13 @@
 		A67A5CAA25157B80003F1C0C /* BJJRollTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BJJRollTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67A5CAE25157B80003F1C0C /* BJJRollTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BJJRollTrackerUITests.swift; sourceTree = "<group>"; };
 		A67A5CB025157B80003F1C0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A67C4E8E251604CC007810B1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A6CB13202530AF8000A6947E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A6CB13302530B3F800A6947E /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alarm.mp3; path = ../../../../../Downloads/alarm.mp3; sourceTree = "<group>"; };
+		A6CB1339253116B000A6947E /* RollSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollSetting.swift; sourceTree = "<group>"; };
+		A6CB134B2531EEC100A6947E /* SettingsViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewControllerDelegate.swift; sourceTree = "<group>"; };
+		A6D06D50251A2D78005309C6 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		A6D06D53251B123E005309C6 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6CB13212530AF8000A6947E /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A60A3E392527366A00FF744A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A6D06D50251A2D78005309C6 /* AnimationViewController.swift */,
+				A67C4E8E251604CC007810B1 /* SettingsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		A67A5C7D25157B7D003F1C0C = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,7 @@
 				A67A5CA225157B80003F1C0C /* BJJRollTrackerTests */,
 				A67A5CAD25157B80003F1C0C /* BJJRollTrackerUITests */,
 				A67A5C8725157B7D003F1C0C /* Products */,
+				A6CB131F2530AF8000A6947E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,9 +124,13 @@
 		A67A5C8825157B7D003F1C0C /* BJJRollTracker */ = {
 			isa = PBXGroup;
 			children = (
+				A6CB134A2531EEA000A6947E /* Protocols */,
+				A6CB13382531169800A6947E /* Model */,
+				A6CB13272530B1C700A6947E /* Sounds */,
+				A60A3E392527366A00FF744A /* Controller */,
+				A6D06D52251B1219005309C6 /* View */,
 				A67A5C8925157B7D003F1C0C /* AppDelegate.swift */,
 				A67A5C8B25157B7D003F1C0C /* SceneDelegate.swift */,
-				A67A5C8D25157B7D003F1C0C /* ViewController.swift */,
 				A67A5C8F25157B7D003F1C0C /* Main.storyboard */,
 				A67A5C9525157B80003F1C0C /* Assets.xcassets */,
 				A67A5C9725157B80003F1C0C /* LaunchScreen.storyboard */,
@@ -129,6 +156,46 @@
 				A67A5CB025157B80003F1C0C /* Info.plist */,
 			);
 			path = BJJRollTrackerUITests;
+			sourceTree = "<group>";
+		};
+		A6CB131F2530AF8000A6947E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6CB13202530AF8000A6947E /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6CB13272530B1C700A6947E /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				A6CB13302530B3F800A6947E /* alarm.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		A6CB13382531169800A6947E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6CB1339253116B000A6947E /* RollSetting.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6CB134A2531EEA000A6947E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A6CB134B2531EEC100A6947E /* SettingsViewControllerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A6D06D52251B1219005309C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6D06D53251B123E005309C6 /* TimerView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +304,7 @@
 			files = (
 				A67A5C9925157B80003F1C0C /* LaunchScreen.storyboard in Resources */,
 				A67A5C9625157B80003F1C0C /* Assets.xcassets in Resources */,
+				A6CB13312530B3F800A6947E /* alarm.mp3 in Resources */,
 				A67A5C9125157B7D003F1C0C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,9 +330,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A67A5C8E25157B7D003F1C0C /* ViewController.swift in Sources */,
+				A6D06D54251B123F005309C6 /* TimerView.swift in Sources */,
 				A67A5C8A25157B7D003F1C0C /* AppDelegate.swift in Sources */,
 				A67A5C9425157B7D003F1C0C /* BJJRollTracker.xcdatamodeld in Sources */,
+				A6D06D51251A2D78005309C6 /* AnimationViewController.swift in Sources */,
+				A67C4E8F251604CC007810B1 /* SettingsViewController.swift in Sources */,
+				A6CB134C2531EEC100A6947E /* SettingsViewControllerDelegate.swift in Sources */,
+				A6CB133A253116B000A6947E /* RollSetting.swift in Sources */,
 				A67A5C8C25157B7D003F1C0C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +510,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2B9H3895JF;
 				INFOPLIST_FILE = BJJRollTracker/Info.plist;
@@ -447,6 +520,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hq.BJJRollTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -456,6 +530,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2B9H3895JF;
 				INFOPLIST_FILE = BJJRollTracker/Info.plist;
@@ -465,6 +540,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hq.BJJRollTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
