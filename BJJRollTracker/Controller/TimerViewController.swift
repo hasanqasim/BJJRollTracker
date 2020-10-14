@@ -21,16 +21,20 @@ class TimerViewController: UIViewController {
     var timer: Timer?
     var secondsCounter = 60
     var minutesCounter = 0
+    var restTime = 0
     var totalRounds = 0
     var roundCounter = 0
     
     var seshStarted = false
+    var isRestTime = true
     
     var currentRollSetting: RollSetting?
     
     var strokeEndMultiplier: CGFloat?
     
-    var audioPlayer: AVAudioPlayer?
+    var audioPlayerRoundEnd: AVAudioPlayer?
+    var audioPlayerRoundStart: AVAudioPlayer?
+    var audioPlayerWarning: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,14 +64,18 @@ class TimerViewController: UIViewController {
     }
     
     func setupAudioPlayer() {
-        let sound = Bundle.main.path(forResource: "alarm", ofType: "mp3")
+        let roundEndBeep = Bundle.main.path(forResource: "alarm", ofType: "mp3")
+        let roundStartBeep = Bundle.main.path(forResource: "start", ofType: "mp3")
+        let warningBeep = Bundle.main.path(forResource: "warning", ofType: "mp3")
         do {
-            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+            audioPlayerRoundEnd = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: roundEndBeep!))
+            audioPlayerRoundStart = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: roundStartBeep!))
+            audioPlayerWarning = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: warningBeep!))
+            
         } catch {
             print(error)
         }
     }
-    
 }
 
 //MARK: timer logic
@@ -83,7 +91,6 @@ extension TimerViewController {
             print("timer already running")
             stopTimer()
         }
-        
     }
     
     @objc func updateTimer() {
@@ -91,12 +98,12 @@ extension TimerViewController {
             startNewRound()
         }
         
-        minutesCounter -= secondsCounter == 60 ? 1 : 0
         secondsCounter = secondsCounter == 0 && minutesCounter != 0 ? 60 : secondsCounter
+        minutesCounter -= secondsCounter == 60 ? 1 : 0
         secondsCounter -= 1
         
-        if minutesCounter == 0 && secondsCounter == currentRollSetting!.warningTime {
-            audioPlayer?.play()
+        if minutesCounter == 0 && secondsCounter == currentRollSetting!.warningTime && !isRestTime {
+            audioPlayerWarning?.play()
         }
         
         textLayer?.string = (secondsCounter >= 10) ? "0\(minutesCounter):\(secondsCounter)": "0\(minutesCounter):0\(secondsCounter)"
@@ -105,10 +112,17 @@ extension TimerViewController {
         }
         
         if minutesCounter == 0 && secondsCounter == 0 {
+            if !isRestTime{
+                audioPlayerRoundEnd?.play()
+            }
+            isRestTime = strokeEndMultiplier == CGFloat(currentRollSetting!.roundTime) ? true : false
             stopTimer()
             if roundCounter < totalRounds {
                 secondsCounter = 60
-                minutesCounter = currentRollSetting!.roundTime
+                minutesCounter = isRestTime ?  currentRollSetting!.restTime : currentRollSetting!.roundTime
+                strokeEndMultiplier = isRestTime ? CGFloat(currentRollSetting!.restTime) : CGFloat(currentRollSetting!.roundTime)
+                shapeLayer.strokeEnd = 0
+                startTimer()
             } else {
                 seshStarted = false
             }
@@ -116,6 +130,8 @@ extension TimerViewController {
     }
     
     func startNewRound() {
+        audioPlayerRoundStart?.play()
+        isRestTime = false
         shapeLayer.strokeEnd = 0
         roundCounter += 1
         roundLabel.text = "\(roundCounter)/\(totalRounds)"
@@ -148,6 +164,7 @@ extension TimerViewController: SettingsViewControllerDelegate {
         currentRollSetting = rollSetting
         minutesCounter = currentRollSetting!.roundTime
         secondsCounter = 60
+        restTime = currentRollSetting!.restTime
         totalRounds = currentRollSetting!.numberOfRounds
         roundCounter = 0
         strokeEndMultiplier = CGFloat(minutesCounter)

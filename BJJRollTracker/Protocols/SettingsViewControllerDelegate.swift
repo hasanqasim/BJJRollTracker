@@ -9,5 +9,5 @@
 import Foundation
 
 protocol SettingsViewControllerDelegate {
-    func didSelectRollSetting(roll: RollSetting)
+    func didSelectRollSetting(rollSetting: RollSetting)
 }

@@ -29,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="238" y="-2022"/>
         </scene>
-        <!--Animation View Controller-->
+        <!--Timer View Controller-->
         <scene sceneID="dYT-tF-dKb">
             <objects>
-                <viewController id="0U6-35-w96" customClass="AnimationViewController" customModule="BJJRollTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0U6-35-w96" customClass="TimerViewController" customModule="BJJRollTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="heK-vt-vdy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,9 +52,9 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROUND 0/0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdf-rA-DfZ">
-                                <rect key="frame" x="116.5" y="60" width="142" height="36"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdf-rA-DfZ">
+                                <rect key="frame" x="157" y="60" width="61.5" height="55"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -150,7 +150,7 @@
                                                     <action selector="roundsSliderMoved:" destination="yiw-qO-bQs" eventType="valueChanged" id="leA-LD-pg8"/>
                                                 </connections>
                                             </slider>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="hFa-in-7Op">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="9" translatesAutoresizingMaskIntoConstraints="NO" id="hFa-in-7Op">
                                                 <rect key="frame" x="14" y="255" width="346" height="31"/>
                                                 <connections>
                                                     <action selector="timerSliderMoved:" destination="yiw-qO-bQs" eventType="valueChanged" id="mKT-uT-khP"/>
