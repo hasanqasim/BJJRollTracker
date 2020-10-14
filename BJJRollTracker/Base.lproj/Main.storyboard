@@ -156,7 +156,7 @@
                                                     <action selector="timerSliderMoved:" destination="yiw-qO-bQs" eventType="valueChanged" id="mKT-uT-khP"/>
                                                 </connections>
                                             </slider>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ny3-XB-hW7">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4" minValue="1" maxValue="9" translatesAutoresizingMaskIntoConstraints="NO" id="Ny3-XB-hW7">
                                                 <rect key="frame" x="14" y="361" width="346" height="31"/>
                                                 <connections>
                                                     <action selector="restSliderMoved:" destination="yiw-qO-bQs" eventType="valueChanged" id="0yY-dr-crk"/>

@@ -26,7 +26,7 @@ class TimerViewController: UIViewController {
     var roundCounter = 0
     
     var seshStarted = false
-    var isRestTime = true
+    var isRestTime = false
     
     var currentRollSetting: RollSetting?
     
@@ -94,7 +94,7 @@ extension TimerViewController {
     }
     
     @objc func updateTimer() {
-        if minutesCounter == currentRollSetting?.roundTime && secondsCounter == 60 && roundCounter < totalRounds {
+        if minutesCounter == currentRollSetting?.roundTime && secondsCounter == 60 && roundCounter < totalRounds && !isRestTime {
             startNewRound()
         }
         
@@ -114,8 +114,11 @@ extension TimerViewController {
         if minutesCounter == 0 && secondsCounter == 0 {
             if !isRestTime{
                 audioPlayerRoundEnd?.play()
+                isRestTime = true
+            } else {
+                isRestTime = false
             }
-            isRestTime = strokeEndMultiplier == CGFloat(currentRollSetting!.roundTime) ? true : false
+            //isRestTime = strokeEndMultiplier == CGFloat(currentRollSetting!.roundTime) ? true : false
             stopTimer()
             if roundCounter < totalRounds {
                 secondsCounter = 60

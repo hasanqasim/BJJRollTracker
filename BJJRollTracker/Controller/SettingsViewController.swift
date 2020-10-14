@@ -43,7 +43,6 @@ class SettingsViewController: UIViewController {
     @IBAction func DoneButtonTapped(_ sender: Any) {
         let currentRoll = RollSetting(numberOfRounds: roundValue, roundTime: timerValue, restTime: restValue, warningTime: warningValue)
         delegate?.didSelectRollSetting(rollSetting: currentRoll)
-        print("we here")
         navigationController?.popViewController(animated: true)
     }
     
