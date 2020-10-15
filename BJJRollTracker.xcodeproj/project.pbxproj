@@ -17,11 +17,12 @@
 		A67A5CAF25157B80003F1C0C /* BJJRollTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A5CAE25157B80003F1C0C /* BJJRollTrackerUITests.swift */; };
 		A67C4E8F251604CC007810B1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67C4E8E251604CC007810B1 /* SettingsViewController.swift */; };
 		A6CB13212530AF8000A6947E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CB13202530AF8000A6947E /* AVFoundation.framework */; };
-		A6CB13312530B3F800A6947E /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6CB13302530B3F800A6947E /* alarm.mp3 */; };
 		A6CB133A253116B000A6947E /* RollSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CB1339253116B000A6947E /* RollSetting.swift */; };
 		A6CB134C2531EEC100A6947E /* SettingsViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CB134B2531EEC100A6947E /* SettingsViewControllerDelegate.swift */; };
-		A6CB13602536A04F00A6947E /* start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6CB135F2536A04F00A6947E /* start.mp3 */; };
-		A6CB13652536A05600A6947E /* warning.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6CB13642536A05600A6947E /* warning.mp3 */; };
+		A6CB13722536E14900A6947E /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6CB136F2536E14800A6947E /* alarm.mp3 */; };
+		A6CB13732536E14900A6947E /* warning.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6CB13702536E14800A6947E /* warning.mp3 */; };
+		A6CB13742536E14900A6947E /* start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6CB13712536E14800A6947E /* start.mp3 */; };
+		A6CB13932538234700A6947E /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CB13922538234700A6947E /* CustomLabel.swift */; };
 		A6D06D51251A2D78005309C6 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D06D50251A2D78005309C6 /* TimerViewController.swift */; };
 		A6D06D54251B123F005309C6 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D06D53251B123E005309C6 /* TimerView.swift */; };
 /* End PBXBuildFile section */
@@ -60,11 +61,12 @@
 		A67A5CB025157B80003F1C0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A67C4E8E251604CC007810B1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A6CB13202530AF8000A6947E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		A6CB13302530B3F800A6947E /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alarm.mp3; path = ../../../../../Downloads/alarm.mp3; sourceTree = "<group>"; };
 		A6CB1339253116B000A6947E /* RollSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollSetting.swift; sourceTree = "<group>"; };
 		A6CB134B2531EEC100A6947E /* SettingsViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewControllerDelegate.swift; sourceTree = "<group>"; };
-		A6CB135F2536A04F00A6947E /* start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = start.mp3; path = ../../../../../Downloads/start.mp3; sourceTree = "<group>"; };
-		A6CB13642536A05600A6947E /* warning.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = warning.mp3; path = ../../../../../Downloads/warning.mp3; sourceTree = "<group>"; };
+		A6CB136F2536E14800A6947E /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alarm.mp3; path = ../../../../../Downloads/sounds/alarm.mp3; sourceTree = "<group>"; };
+		A6CB13702536E14800A6947E /* warning.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = warning.mp3; path = ../../../../../Downloads/sounds/warning.mp3; sourceTree = "<group>"; };
+		A6CB13712536E14800A6947E /* start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = start.mp3; path = ../../../../../Downloads/sounds/start.mp3; sourceTree = "<group>"; };
+		A6CB13922538234700A6947E /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomLabel.swift; path = ../../../../Swift5/raywenderlichTutes/Bullseye/Bullseye/Bullseye/View/CustomLabel.swift; sourceTree = "<group>"; };
 		A6D06D50251A2D78005309C6 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		A6D06D53251B123E005309C6 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -173,9 +175,9 @@
 		A6CB13272530B1C700A6947E /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				A6CB13302530B3F800A6947E /* alarm.mp3 */,
-				A6CB135F2536A04F00A6947E /* start.mp3 */,
-				A6CB13642536A05600A6947E /* warning.mp3 */,
+				A6CB136F2536E14800A6947E /* alarm.mp3 */,
+				A6CB13712536E14800A6947E /* start.mp3 */,
+				A6CB13702536E14800A6947E /* warning.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -199,6 +201,7 @@
 		A6D06D52251B1219005309C6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A6CB13922538234700A6947E /* CustomLabel.swift */,
 				A6D06D53251B123E005309C6 /* TimerView.swift */,
 			);
 			path = View;
@@ -309,11 +312,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A67A5C9925157B80003F1C0C /* LaunchScreen.storyboard in Resources */,
+				A6CB13742536E14900A6947E /* start.mp3 in Resources */,
 				A67A5C9625157B80003F1C0C /* Assets.xcassets in Resources */,
-				A6CB13602536A04F00A6947E /* start.mp3 in Resources */,
-				A6CB13652536A05600A6947E /* warning.mp3 in Resources */,
-				A6CB13312530B3F800A6947E /* alarm.mp3 in Resources */,
+				A6CB13722536E14900A6947E /* alarm.mp3 in Resources */,
 				A67A5C9125157B7D003F1C0C /* Main.storyboard in Resources */,
+				A6CB13732536E14900A6947E /* warning.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6D06D54251B123F005309C6 /* TimerView.swift in Sources */,
+				A6CB13932538234700A6947E /* CustomLabel.swift in Sources */,
 				A67A5C8A25157B7D003F1C0C /* AppDelegate.swift in Sources */,
 				A67A5C9425157B7D003F1C0C /* BJJRollTracker.xcdatamodeld in Sources */,
 				A6D06D51251A2D78005309C6 /* TimerViewController.swift in Sources */,

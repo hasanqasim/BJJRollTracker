@@ -12,6 +12,8 @@ import AVFoundation
 class TimerViewController: UIViewController {
         
     @IBOutlet weak var roundLabel: UILabel!
+    @IBOutlet weak var buttonOne: UIButton!
+    @IBOutlet weak var buttonTwo: UIButton!
     
     let subview = UIView()
     let shapeLayer = CAShapeLayer()
@@ -71,9 +73,16 @@ class TimerViewController: UIViewController {
             audioPlayerRoundEnd = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: roundEndBeep!))
             audioPlayerRoundStart = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: roundStartBeep!))
             audioPlayerWarning = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: warningBeep!))
-            
         } catch {
             print(error)
+        }
+    }
+    @IBAction func resetTimer(_ sender: Any) {
+        if seshStarted {
+            roundCounter -= roundCounter == 0 ? 0 : 1
+            resetSettings()
+            updateUI()
+            print("we inside \(#function)")
         }
     }
 }
@@ -162,15 +171,10 @@ extension TimerViewController {
 extension TimerViewController: SettingsViewControllerDelegate {
     
     func didSelectRollSetting(rollSetting: RollSetting) {
-        stopTimer()
         seshStarted = true
         currentRollSetting = rollSetting
-        minutesCounter = currentRollSetting!.roundTime
-        secondsCounter = 60
-        restTime = currentRollSetting!.restTime
-        totalRounds = currentRollSetting!.numberOfRounds
         roundCounter = 0
-        strokeEndMultiplier = CGFloat(minutesCounter)
+        resetSettings()
         updateUI()
         
         print("we here \(#function)")
@@ -225,12 +229,46 @@ extension TimerViewController {
         textLayer?.string = "0\(minutesCounter):00"
         roundLabel.text = "\(roundCounter)/\(totalRounds)"
     }
+    
+    func resetSettings() {
+        stopTimer()
+        isRestTime = false
+        minutesCounter = currentRollSetting!.roundTime
+        secondsCounter = 60
+        restTime = currentRollSetting!.restTime
+        totalRounds = currentRollSetting!.numberOfRounds
+        strokeEndMultiplier = CGFloat(minutesCounter)
+    }
 
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        //print("viewWillLayoutSubviews")
-        //print(UIDevice.current.orientation.isLandscape ? "landscape":"potrait")
+        
     }
+    
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        print("\(#function)")
+        print(UIDevice.current.orientation.isLandscape ? "landscape":"potrait")
+        if UIDevice.current.orientation.isLandscape {
+            navigationController?.setNavigationBarHidden(true, animated: true)
+            buttonOne.isHidden = true
+            buttonTwo.isHidden = true
+        } else {
+            navigationController?.setNavigationBarHidden(false, animated: true)
+            buttonOne.isHidden = false
+            buttonTwo.isHidden = false
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("\(#function)")
+        if UIDevice.current.orientation.isLandscape {
+            navigationController?.setNavigationBarHidden(true, animated: true)
+        }
+    }
+
 }
 
 // MARK: CAShapeLayer extension

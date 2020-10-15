@@ -62,4 +62,13 @@ class SettingsViewController: UIViewController {
         warningValue = Int(sender.value)*5
         warningLabel.text = warningValue == 5 ? "Warning Time  :0\(warningValue)": "Warning Time  :\(warningValue)"
     }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        print("\(#function)")
+        print(UIDevice.current.orientation.isLandscape ? "landscape":"potrait")
+        if UIDevice.current.orientation.isLandscape || UIDevice.current.orientation.isPortrait {
+            navigationController?.setNavigationBarHidden(false, animated: true)
+        }
+    }
 }
