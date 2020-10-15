@@ -8,6 +8,8 @@
 
 import Foundation
 
-protocol SettingsViewControllerDelegate {
+// higher order fucntion list.forEach
+// chekc for retain cycle
+protocol SettingsViewControllerDelegate: class {
     func didSelectRollSetting(rollSetting: RollSetting)
 }

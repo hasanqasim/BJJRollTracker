@@ -37,7 +37,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="W0B-F2-ctj"/>
                                         </constraints>
-                                        <state key="normal" image="option" catalog="system"/>
+                                        <state key="normal" image="settings"/>
                                         <connections>
                                             <segue destination="yiw-qO-bQs" kind="show" identifier="settings" id="QLH-nJ-2z2"/>
                                         </connections>
@@ -47,7 +47,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="uqV-qA-MRa"/>
                                         </constraints>
-                                        <state key="normal" image="gobackward" catalog="system"/>
+                                        <state key="normal" image="restart"/>
                                         <connections>
                                             <action selector="resetTimer:" destination="0U6-35-w96" eventType="touchUpInside" id="RSG-4n-SZl"/>
                                         </connections>
@@ -156,24 +156,28 @@
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="uWQ-aD-W5r">
                                                 <rect key="frame" x="14" y="76" width="385" height="31"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <connections>
                                                     <action selector="roundsSliderMoved:" destination="yiw-qO-bQs" eventType="valueChanged" id="leA-LD-pg8"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="9" translatesAutoresizingMaskIntoConstraints="NO" id="hFa-in-7Op">
                                                 <rect key="frame" x="14" y="198" width="385" height="31"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <connections>
                                                     <action selector="timerSliderMoved:" destination="yiw-qO-bQs" eventType="valueChanged" id="mKT-uT-khP"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4" minValue="1" maxValue="9" translatesAutoresizingMaskIntoConstraints="NO" id="Ny3-XB-hW7">
                                                 <rect key="frame" x="14" y="320" width="385" height="31"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <connections>
                                                     <action selector="restSliderMoved:" destination="yiw-qO-bQs" eventType="valueChanged" id="0yY-dr-crk"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="6" translatesAutoresizingMaskIntoConstraints="NO" id="Cmd-pZ-M6K">
                                                 <rect key="frame" x="14" y="442" width="385" height="31"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <connections>
                                                     <action selector="warningSliderMoved:" destination="yiw-qO-bQs" eventType="valueChanged" id="V1i-wT-1TT"/>
                                                 </connections>
@@ -237,6 +241,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Current Roll Settings" id="d60-ln-F5m">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="LYf-IV-Wny">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="DoneButtonTapped:" destination="yiw-qO-bQs" id="RIT-ic-77s"/>
                             </connections>
@@ -488,9 +493,10 @@
             <point key="canvasLocation" x="4335" y="-2301"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
-        <image name="gobackward" catalog="system" width="121" height="128"/>
-        <image name="option" catalog="system" width="128" height="106"/>
+        <image name="restart" width="50" height="50"/>
+        <image name="settings" width="50" height="50"/>
         <image name="timer" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
