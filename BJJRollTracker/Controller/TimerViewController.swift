@@ -134,6 +134,7 @@ extension TimerViewController {
                 minutesCounter = isRestTime ?  currentRollSetting!.restTime : currentRollSetting!.roundTime
                 strokeEndMultiplier = isRestTime ? CGFloat(currentRollSetting!.restTime) : CGFloat(currentRollSetting!.roundTime)
                 shapeLayer.strokeEnd = 0
+                shapeLayer.strokeColor = isRestTime ? UIColor.systemYellow.cgColor : UIColor.red.cgColor
                 startTimer()
             } else {
                 seshStarted = false
@@ -253,11 +254,9 @@ extension TimerViewController {
         if UIDevice.current.orientation.isLandscape {
             navigationController?.setNavigationBarHidden(true, animated: true)
             buttonOne.isHidden = true
-            buttonTwo.isHidden = true
         } else {
             navigationController?.setNavigationBarHidden(false, animated: true)
             buttonOne.isHidden = false
-            buttonTwo.isHidden = false
         }
     }
     

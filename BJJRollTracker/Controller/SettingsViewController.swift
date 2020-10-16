@@ -25,7 +25,7 @@ class SettingsViewController: UIViewController {
     var restValue = 0
     var warningValue = 0
     
-    var delegate: SettingsViewControllerDelegate?
+    weak var delegate: SettingsViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
