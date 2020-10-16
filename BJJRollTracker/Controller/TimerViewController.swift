@@ -47,7 +47,7 @@ class TimerViewController: UIViewController {
         createSubview()
 
         trackLayer.animate(with: UIColor.darkGray.cgColor)
-        shapeLayer.animate(with: UIColor.red.cgColor)
+        shapeLayer.animate(with: UIColor.systemRed.cgColor)
         shapeLayer.strokeEnd = 0
         textLayer = createTextLayer(textColor: UIColor.white.cgColor)
         
@@ -115,7 +115,8 @@ extension TimerViewController {
             audioPlayerWarning?.play()
         }
         
-        textLayer?.string = (secondsCounter >= 10) ? "0\(minutesCounter):\(secondsCounter)": "0\(minutesCounter):0\(secondsCounter)"
+        //textLayer?.string = (secondsCounter >= 10) ? "0\(minutesCounter):\(secondsCounter)": "0\(minutesCounter):0\(secondsCounter)"
+        updateTextLayer()
         if let multiplier = strokeEndMultiplier {
             shapeLayer.strokeEnd += (1/75)/multiplier
         }
@@ -134,12 +135,18 @@ extension TimerViewController {
                 minutesCounter = isRestTime ?  currentRollSetting!.restTime : currentRollSetting!.roundTime
                 strokeEndMultiplier = isRestTime ? CGFloat(currentRollSetting!.restTime) : CGFloat(currentRollSetting!.roundTime)
                 shapeLayer.strokeEnd = 0
-                shapeLayer.strokeColor = isRestTime ? UIColor.systemYellow.cgColor : UIColor.red.cgColor
+                shapeLayer.strokeColor = isRestTime ? UIColor.blue.cgColor : UIColor.systemRed.cgColor
                 startTimer()
             } else {
                 seshStarted = false
             }
         }
+    }
+    
+    func updateTextLayer() {
+        let minutes = minutesCounter > 9 ? "\(minutesCounter)" : "0\(minutesCounter)"
+        let seconds = secondsCounter > 9 ? "\(secondsCounter)": "0\(secondsCounter)"
+        textLayer?.string = "\(minutes):\(seconds)"
     }
     
     func startNewRound() {
@@ -164,9 +171,7 @@ extension TimerViewController {
             print("in function: \(#function), timer stopped")
         }
     }
-    
 }
-
 
 //MARK: delegate
 extension TimerViewController: SettingsViewControllerDelegate {
@@ -227,7 +232,8 @@ extension TimerViewController {
     
     func updateUI() {
         shapeLayer.strokeEnd = 0
-        textLayer?.string = "0\(minutesCounter):00"
+        shapeLayer.strokeColor = UIColor.systemRed.cgColor
+        textLayer?.string = minutesCounter < 10 ? "0\(minutesCounter):00" : "\(minutesCounter):00"
         roundLabel.text = "\(roundCounter)/\(totalRounds)"
     }
     
