@@ -43,17 +43,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A67A5C8625157B7D003F1C0C /* BJJRollTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BJJRollTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A67A5C8625157B7D003F1C0C /* BjjRollTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BjjRollTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67A5C8925157B7D003F1C0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A67A5C8B25157B7D003F1C0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A67A5C9025157B7D003F1C0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A67A5C9525157B80003F1C0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A67A5C9825157B80003F1C0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A67A5C9A25157B80003F1C0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A67A5C9F25157B80003F1C0C /* BJJRollTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BJJRollTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A67A5C9F25157B80003F1C0C /* BjjRollTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BjjRollTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67A5CA325157B80003F1C0C /* BJJRollTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BJJRollTrackerTests.swift; sourceTree = "<group>"; };
 		A67A5CA525157B80003F1C0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A67A5CAA25157B80003F1C0C /* BJJRollTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BJJRollTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A67A5CAA25157B80003F1C0C /* BjjRollTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BjjRollTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67A5CAE25157B80003F1C0C /* BJJRollTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BJJRollTrackerUITests.swift; sourceTree = "<group>"; };
 		A67A5CB025157B80003F1C0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A67C4E8E251604CC007810B1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -116,9 +116,9 @@
 		A67A5C8725157B7D003F1C0C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A67A5C8625157B7D003F1C0C /* BJJRollTracker.app */,
-				A67A5C9F25157B80003F1C0C /* BJJRollTrackerTests.xctest */,
-				A67A5CAA25157B80003F1C0C /* BJJRollTrackerUITests.xctest */,
+				A67A5C8625157B7D003F1C0C /* BjjRollTimer.app */,
+				A67A5C9F25157B80003F1C0C /* BjjRollTimerTests.xctest */,
+				A67A5CAA25157B80003F1C0C /* BjjRollTimerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,9 +204,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A67A5C8525157B7D003F1C0C /* BJJRollTracker */ = {
+		A67A5C8525157B7D003F1C0C /* BjjRollTimer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A67A5CB325157B80003F1C0C /* Build configuration list for PBXNativeTarget "BJJRollTracker" */;
+			buildConfigurationList = A67A5CB325157B80003F1C0C /* Build configuration list for PBXNativeTarget "BjjRollTimer" */;
 			buildPhases = (
 				A67A5C8225157B7D003F1C0C /* Sources */,
 				A67A5C8325157B7D003F1C0C /* Frameworks */,
@@ -216,14 +216,14 @@
 			);
 			dependencies = (
 			);
-			name = BJJRollTracker;
+			name = BjjRollTimer;
 			productName = BJJRollTracker;
-			productReference = A67A5C8625157B7D003F1C0C /* BJJRollTracker.app */;
+			productReference = A67A5C8625157B7D003F1C0C /* BjjRollTimer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A67A5C9E25157B80003F1C0C /* BJJRollTrackerTests */ = {
+		A67A5C9E25157B80003F1C0C /* BjjRollTimerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A67A5CB625157B80003F1C0C /* Build configuration list for PBXNativeTarget "BJJRollTrackerTests" */;
+			buildConfigurationList = A67A5CB625157B80003F1C0C /* Build configuration list for PBXNativeTarget "BjjRollTimerTests" */;
 			buildPhases = (
 				A67A5C9B25157B80003F1C0C /* Sources */,
 				A67A5C9C25157B80003F1C0C /* Frameworks */,
@@ -234,14 +234,14 @@
 			dependencies = (
 				A67A5CA125157B80003F1C0C /* PBXTargetDependency */,
 			);
-			name = BJJRollTrackerTests;
+			name = BjjRollTimerTests;
 			productName = BJJRollTrackerTests;
-			productReference = A67A5C9F25157B80003F1C0C /* BJJRollTrackerTests.xctest */;
+			productReference = A67A5C9F25157B80003F1C0C /* BjjRollTimerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A67A5CA925157B80003F1C0C /* BJJRollTrackerUITests */ = {
+		A67A5CA925157B80003F1C0C /* BjjRollTimerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A67A5CB925157B80003F1C0C /* Build configuration list for PBXNativeTarget "BJJRollTrackerUITests" */;
+			buildConfigurationList = A67A5CB925157B80003F1C0C /* Build configuration list for PBXNativeTarget "BjjRollTimerUITests" */;
 			buildPhases = (
 				A67A5CA625157B80003F1C0C /* Sources */,
 				A67A5CA725157B80003F1C0C /* Frameworks */,
@@ -252,9 +252,9 @@
 			dependencies = (
 				A67A5CAC25157B80003F1C0C /* PBXTargetDependency */,
 			);
-			name = BJJRollTrackerUITests;
+			name = BjjRollTimerUITests;
 			productName = BJJRollTrackerUITests;
-			productReference = A67A5CAA25157B80003F1C0C /* BJJRollTrackerUITests.xctest */;
+			productReference = A67A5CAA25157B80003F1C0C /* BjjRollTimerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -280,7 +280,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A67A5C8125157B7D003F1C0C /* Build configuration list for PBXProject "BJJRollTracker" */;
+			buildConfigurationList = A67A5C8125157B7D003F1C0C /* Build configuration list for PBXProject "BjjRollTimer" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -293,9 +293,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A67A5C8525157B7D003F1C0C /* BJJRollTracker */,
-				A67A5C9E25157B80003F1C0C /* BJJRollTrackerTests */,
-				A67A5CA925157B80003F1C0C /* BJJRollTrackerUITests */,
+				A67A5C8525157B7D003F1C0C /* BjjRollTimer */,
+				A67A5C9E25157B80003F1C0C /* BjjRollTimerTests */,
+				A67A5CA925157B80003F1C0C /* BjjRollTimerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -366,12 +366,12 @@
 /* Begin PBXTargetDependency section */
 		A67A5CA125157B80003F1C0C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A67A5C8525157B7D003F1C0C /* BJJRollTracker */;
+			target = A67A5C8525157B7D003F1C0C /* BjjRollTimer */;
 			targetProxy = A67A5CA025157B80003F1C0C /* PBXContainerItemProxy */;
 		};
 		A67A5CAC25157B80003F1C0C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A67A5C8525157B7D003F1C0C /* BJJRollTracker */;
+			target = A67A5C8525157B7D003F1C0C /* BjjRollTimer */;
 			targetProxy = A67A5CAB25157B80003F1C0C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -522,7 +522,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hq.BJJRollTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hq.BjjRollTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -542,7 +542,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hq.BJJRollTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hq.BjjRollTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -568,7 +568,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BJJRollTracker.app/BJJRollTracker";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BjjRollTimer.app/BjjRollTimer";
 			};
 			name = Debug;
 		};
@@ -590,7 +590,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BJJRollTracker.app/BJJRollTracker";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BjjRollTimer.app/BjjRollTimer";
 			};
 			name = Release;
 		};
@@ -637,7 +637,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A67A5C8125157B7D003F1C0C /* Build configuration list for PBXProject "BJJRollTracker" */ = {
+		A67A5C8125157B7D003F1C0C /* Build configuration list for PBXProject "BjjRollTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A67A5CB125157B80003F1C0C /* Debug */,
@@ -646,7 +646,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A67A5CB325157B80003F1C0C /* Build configuration list for PBXNativeTarget "BJJRollTracker" */ = {
+		A67A5CB325157B80003F1C0C /* Build configuration list for PBXNativeTarget "BjjRollTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A67A5CB425157B80003F1C0C /* Debug */,
@@ -655,7 +655,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A67A5CB625157B80003F1C0C /* Build configuration list for PBXNativeTarget "BJJRollTrackerTests" */ = {
+		A67A5CB625157B80003F1C0C /* Build configuration list for PBXNativeTarget "BjjRollTimerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A67A5CB725157B80003F1C0C /* Debug */,
@@ -664,7 +664,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A67A5CB925157B80003F1C0C /* Build configuration list for PBXNativeTarget "BJJRollTrackerUITests" */ = {
+		A67A5CB925157B80003F1C0C /* Build configuration list for PBXNativeTarget "BjjRollTimerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A67A5CBA25157B80003F1C0C /* Debug */,
