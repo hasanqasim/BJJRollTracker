@@ -48,7 +48,7 @@ class SettingsViewController: UIViewController {
     
     @IBAction func roundsSliderMoved(_ sender: UISlider) {
         roundValue = Int(sender.value)
-        roundsLabel.text = "Number of rounds  \(roundValue)"
+        roundsLabel.text = "Number of Rounds  \(roundValue)"
     }
     @IBAction func timerSliderMoved(_ sender: UISlider) {
         timerValue = Int(sender.value)
