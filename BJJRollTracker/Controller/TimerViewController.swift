@@ -20,7 +20,7 @@ class TimerViewController: UIViewController {
     let trackLayer = CAShapeLayer()
     var textLayer: CATextLayer?
      
-    var timer: Timer?
+    static var timer: Timer?
     var secondsCounter = 60
     var minutesCounter = 0
     var restTime = 0
@@ -66,7 +66,7 @@ class TimerViewController: UIViewController {
     }
     
     func setupAudioPlayer() {
-        let roundEndBeep = Bundle.main.path(forResource: "alarm", ofType: "mp3")
+        let roundEndBeep = Bundle.main.path(forResource: "end", ofType: "mp3")
         let roundStartBeep = Bundle.main.path(forResource: "start", ofType: "mp3")
         let warningBeep = Bundle.main.path(forResource: "warning", ofType: "mp3")
         do {
@@ -74,7 +74,6 @@ class TimerViewController: UIViewController {
             audioPlayerRoundStart = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: roundStartBeep!))
             audioPlayerWarning = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: warningBeep!))
         } catch {
-            print(error)
         }
     }
     @IBAction func resetTimer(_ sender: Any) {
@@ -82,7 +81,6 @@ class TimerViewController: UIViewController {
             roundCounter -= roundCounter == 0 ? 0 : 1
             resetSettings()
             updateUI()
-            print("we inside \(#function)")
         }
     }
 }
@@ -91,13 +89,11 @@ class TimerViewController: UIViewController {
 extension TimerViewController {
     
     @objc func handleTap() {
-        print("attempting to animate stroke")
-        if timer == nil {
+        if TimerViewController.timer == nil {
             if seshStarted {
                 startTimer()
             }
         } else {
-            print("timer already running")
             stopTimer()
         }
     }
@@ -115,8 +111,8 @@ extension TimerViewController {
             audioPlayerWarning?.play()
         }
         
-        //textLayer?.string = (secondsCounter >= 10) ? "0\(minutesCounter):\(secondsCounter)": "0\(minutesCounter):0\(secondsCounter)"
         updateTextLayer()
+        
         if let multiplier = strokeEndMultiplier {
             shapeLayer.strokeEnd += (1/75)/multiplier
         }
@@ -135,7 +131,7 @@ extension TimerViewController {
                 minutesCounter = isRestTime ?  currentRollSetting!.restTime : currentRollSetting!.roundTime
                 strokeEndMultiplier = isRestTime ? CGFloat(currentRollSetting!.restTime) : CGFloat(currentRollSetting!.roundTime)
                 shapeLayer.strokeEnd = 0
-                shapeLayer.strokeColor = isRestTime ? UIColor.blue.cgColor : UIColor.systemRed.cgColor
+                shapeLayer.strokeColor = isRestTime ? UIColor.systemGreen.cgColor : UIColor.systemRed.cgColor
                 startTimer()
             } else {
                 seshStarted = false
@@ -160,15 +156,13 @@ extension TimerViewController {
     func startTimer() {
         let timer = Timer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
         RunLoop.current.add(timer, forMode: .common)
-        self.timer = timer
-        print("timer started")
+        TimerViewController.timer = timer
     }
     
     func stopTimer() {
-        if timer != nil {
-            timer?.invalidate()
-            timer = nil
-            print("in function: \(#function), timer stopped")
+        if TimerViewController.timer != nil {
+            TimerViewController.timer?.invalidate()
+            TimerViewController.timer = nil
         }
     }
 }
@@ -182,8 +176,6 @@ extension TimerViewController: SettingsViewControllerDelegate {
         roundCounter = 0
         resetSettings()
         updateUI()
-        
-        print("we here \(#function)")
     }
 }
 
@@ -247,16 +239,8 @@ extension TimerViewController {
         strokeEndMultiplier = CGFloat(minutesCounter)
     }
 
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        
-    }
-    
-    
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
-        print("\(#function)")
-        print(UIDevice.current.orientation.isLandscape ? "landscape":"potrait")
         if UIDevice.current.orientation.isLandscape {
             navigationController?.setNavigationBarHidden(true, animated: true)
             buttonOne.isHidden = true
@@ -266,9 +250,15 @@ extension TimerViewController {
         }
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        UIApplication.shared.isIdleTimerDisabled = false
+        stopTimer()
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("\(#function)")
+        UIApplication.shared.isIdleTimerDisabled = true
         if UIDevice.current.orientation.isLandscape {
             navigationController?.setNavigationBarHidden(true, animated: true)
         }
