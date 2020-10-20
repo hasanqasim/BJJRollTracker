@@ -63,6 +63,10 @@ class SettingsViewController: UIViewController {
         warningLabel.text = warningValue == 5 ? "Warning Time  :0\(warningValue)": "Warning Time  :\(warningValue)"
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+    }
+    
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         if UIDevice.current.orientation.isLandscape || UIDevice.current.orientation.isPortrait {
