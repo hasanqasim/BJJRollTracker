@@ -15,6 +15,8 @@ class TimerViewController: UIViewController {
     @IBOutlet weak var buttonOne: UIButton!
     @IBOutlet weak var buttonTwo: UIButton!
     
+    let defaults = UserDefaults.standard
+    
     let subview = UIView()
     let shapeLayer = CAShapeLayer()
     let trackLayer = CAShapeLayer()
@@ -55,6 +57,7 @@ class TimerViewController: UIViewController {
         addLayersToSubview()
         
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
+        checkForInitialLaunch()
     }
     
     
@@ -263,6 +266,22 @@ extension TimerViewController {
             navigationController?.setNavigationBarHidden(true, animated: true)
         }
     }
+    
+    func showInstructionsAlert() {
+        let message = "Tap on screen to start timer"
+        let alert = UIAlertController(title: "Instructions", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+        self.present(alert, animated: true)
+    }
+    
+    func checkForInitialLaunch() {
+        let isInitialLaunch = defaults.object(forKey: "launchBoolean") as? Bool ?? nil
+        if isInitialLaunch == nil {
+            showInstructionsAlert()
+            defaults.set(false, forKey: "launchBoolean")
+        }
+    }
+
 
 }
 
