@@ -27,6 +27,8 @@ class SettingsViewController: UIViewController {
     
     weak var delegate: SettingsViewControllerDelegate?
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //self.navigationItem.setHidesBackButton(true, animated: true);
@@ -43,6 +45,11 @@ class SettingsViewController: UIViewController {
     @IBAction func DoneButtonTapped(_ sender: Any) {
         let currentRoll = RollSetting(numberOfRounds: roundValue, roundTime: timerValue, restTime: restValue, warningTime: warningValue)
         delegate?.didSelectRollSetting(rollSetting: currentRoll)
+        /*
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: { [weak self] in
+            self?.checkForInitialLaunch()
+        })
+         */
         navigationController?.popViewController(animated: true)
     }
     
@@ -74,3 +81,4 @@ class SettingsViewController: UIViewController {
         }
     }
 }
+

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A628A71D25411D7D00F8AF60 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = A628A71C25411D7C00F8AF60 /* Images */; };
 		A67A5C8A25157B7D003F1C0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A5C8925157B7D003F1C0C /* AppDelegate.swift */; };
 		A67A5C8C25157B7D003F1C0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67A5C8B25157B7D003F1C0C /* SceneDelegate.swift */; };
 		A67A5C9125157B7D003F1C0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67A5C8F25157B7D003F1C0C /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A628A71C25411D7C00F8AF60 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Images; path = ../../../../Desktop/Images; sourceTree = "<group>"; };
 		A67A5C8625157B7D003F1C0C /* BjjRollTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BjjRollTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67A5C8925157B7D003F1C0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A67A5C8B25157B7D003F1C0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		A67A5C8825157B7D003F1C0C /* BJJRollTracker */ = {
 			isa = PBXGroup;
 			children = (
+				A628A71C25411D7C00F8AF60 /* Images */,
 				A6CB134A2531EEA000A6947E /* Protocols */,
 				A6CB13382531169800A6947E /* Model */,
 				A6CB13272530B1C700A6947E /* Sounds */,
@@ -307,6 +310,7 @@
 			files = (
 				A67A5C9925157B80003F1C0C /* LaunchScreen.storyboard in Resources */,
 				A6B26137253D091B00135332 /* start.mp3 in Resources */,
+				A628A71D25411D7D00F8AF60 /* Images in Resources */,
 				A67A5C9625157B80003F1C0C /* Assets.xcassets in Resources */,
 				A6B26136253D091B00135332 /* end.mp3 in Resources */,
 				A67A5C9125157B7D003F1C0C /* Main.storyboard in Resources */,
@@ -518,7 +522,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 2B9H3895JF;
 				INFOPLIST_FILE = BJJRollTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -539,7 +543,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 2B9H3895JF;
 				INFOPLIST_FILE = BJJRollTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

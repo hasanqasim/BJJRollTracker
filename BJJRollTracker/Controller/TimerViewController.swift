@@ -57,7 +57,6 @@ class TimerViewController: UIViewController {
         addLayersToSubview()
         
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
-        checkForInitialLaunch()
     }
     
     
@@ -179,6 +178,10 @@ extension TimerViewController: SettingsViewControllerDelegate {
         roundCounter = 0
         resetSettings()
         updateUI()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: { [weak self] in
+            self?.checkForInitialLaunch()
+        })
+
     }
 }
 
@@ -264,11 +267,15 @@ extension TimerViewController {
         UIApplication.shared.isIdleTimerDisabled = true
         if UIDevice.current.orientation.isLandscape {
             navigationController?.setNavigationBarHidden(true, animated: true)
+            buttonOne.isHidden = true
         }
     }
-    
+}
+
+//MARK: Instructions Alert
+extension TimerViewController {
     func showInstructionsAlert() {
-        let message = "Tap on screen to start timer"
+        let message = "Tap screen to start and stop timer."
         let alert = UIAlertController(title: "Instructions", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
         self.present(alert, animated: true)
@@ -282,8 +289,8 @@ extension TimerViewController {
         }
     }
 
-
 }
+
 
 // MARK: CAShapeLayer extension
 extension CAShapeLayer {

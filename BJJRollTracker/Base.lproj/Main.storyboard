@@ -17,18 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdf-rA-DfZ">
-                                <rect key="frame" x="168.66666666666666" y="59.999999999999993" width="76.666666666666657" height="68.333333333333314"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="50"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=compact-widthClass=compact">
-                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="70"/>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=regular">
-                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="70"/>
-                                </variation>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MZk-cH-yju">
                                 <rect key="frame" x="16" y="670" width="382" height="50"/>
                                 <subviews>
@@ -54,18 +42,24 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdf-rA-DfZ">
+                                <rect key="frame" x="168.66666666666666" y="60" width="76.666666666666657" height="68.333333333333314"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="u22-KD-rJX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="MZk-cH-yju" secondAttribute="trailing" constant="16" id="2Hv-yx-s8g"/>
+                            <constraint firstAttribute="trailing" secondItem="MZk-cH-yju" secondAttribute="trailing" constant="8" id="2Hv-yx-s8g"/>
                             <constraint firstItem="mdf-rA-DfZ" firstAttribute="centerX" secondItem="heK-vt-vdy" secondAttribute="centerX" id="3fn-m5-uR7"/>
                             <constraint firstItem="MZk-cH-yju" firstAttribute="leading" secondItem="u22-KD-rJX" secondAttribute="leading" constant="16" id="3iM-np-3tm"/>
                             <constraint firstItem="u22-KD-rJX" firstAttribute="trailing" secondItem="MZk-cH-yju" secondAttribute="trailing" constant="16" id="DWA-aq-RW2"/>
                             <constraint firstItem="u22-KD-rJX" firstAttribute="bottom" secondItem="mdf-rA-DfZ" secondAttribute="bottom" constant="16" id="FUE-il-jiD"/>
                             <constraint firstItem="u22-KD-rJX" firstAttribute="bottom" secondItem="MZk-cH-yju" secondAttribute="bottom" constant="16" id="O8N-o5-w48"/>
                             <constraint firstItem="mdf-rA-DfZ" firstAttribute="top" secondItem="u22-KD-rJX" secondAttribute="top" constant="16" id="h7y-d8-o7h"/>
-                            <constraint firstItem="mdf-rA-DfZ" firstAttribute="leading" secondItem="u22-KD-rJX" secondAttribute="leading" constant="16" id="pBe-kn-U4s"/>
+                            <constraint firstItem="mdf-rA-DfZ" firstAttribute="leading" secondItem="u22-KD-rJX" secondAttribute="leading" constant="8" id="pBe-kn-U4s"/>
                             <constraint firstItem="u22-KD-rJX" firstAttribute="bottom" secondItem="MZk-cH-yju" secondAttribute="bottom" constant="16" id="ujr-Rq-wzP"/>
                         </constraints>
                         <variation key="default">
